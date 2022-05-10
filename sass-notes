@@ -3,6 +3,7 @@
 --------------------------------------------------------------
 3 -
     clip-path: polygan(x y, x y , ...);
+    
 
 4 -
     how to center everything:
@@ -742,6 +743,6 @@ hover none: (for touch device): use hover:none
 1:
 2:
 3:
-
+4:
 
 
