@@ -178,7 +178,7 @@
     }
 
 
-    it different with mixin in css export
+    it is different with mixin in css export
 
     .btn-main:link,
     .btn-hot:link{
@@ -736,6 +736,9 @@ hover none: (for touch device): use hover:none
          grid-template-rows:repeat(2, minmax(150px, min-content));
          grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
          grid-auto-rows:150px;
+
+    auto-fill --> fill all space
+    auto-fit  --> fill space as you need
 
 ---------------------------------------------------------
 9. Nexter Project — Master CSS Grid Layouts![UdemyIran]
