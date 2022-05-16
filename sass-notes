@@ -751,6 +751,13 @@ hover none: (for touch device): use hover:none
 6:
 7:
 8:
-9?
+9: 
+10: object fit with imagess for grid items,
+    object-fit:cover
+
+11:
+12:
+ss
+
 
 
