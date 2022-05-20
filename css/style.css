@@ -93,6 +93,26 @@ body {
   background-color: #c69963;
   grid-column: sidebar-start/sidebar-end;
   grid-row: 1/-1;
+  display: grid;
+  justify-content: center;
+}
+
+.nav-btn {
+  border: none;
+  margin-top: 4rem;
+}
+.nav-btn::before, .nav-btn::after, .nav-btn {
+  content: "";
+  display: block;
+  background-color: #fff;
+  height: 0.2rem;
+  width: 50px;
+}
+.nav-btn::before {
+  transform: translateY(-1.5rem);
+}
+.nav-btn::after {
+  transform: translateY(1.3rem);
 }
 
 .header {
