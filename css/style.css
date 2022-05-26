@@ -29,6 +29,12 @@ body {
   font-weight: 400;
 }
 
+.heading-1 {
+  font-size: 4.5rem;
+  color: #f9f7f6;
+  line-height: 1;
+}
+
 .heading-2 {
   font-size: 4rem;
   font-style: italic;
@@ -116,8 +122,57 @@ body {
 }
 
 .header {
-  background-color: #54483A;
   grid-column: full-start/col-end 6;
+  background-image: linear-gradient(to right, rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url(../img/hero.jpeg);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  padding: 4rem;
+  grid-template-rows: repeat(12, 1fr);
+}
+.header__logo {
+  height: 3rem;
+  justify-self: center;
+  grid-row: span 4;
+}
+.header h1 {
+  grid-row: span 2;
+}
+.header__seenon-text {
+  grid-row: span 5;
+  line-height: 1;
+  justify-self: center;
+  color: #aaa;
+  font-size: 1.6rem;
+  align-self: end;
+  margin-bottom: 1rem;
+  width: 100%;
+  grid-template-columns: 1fr max-content 1fr;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-gap: 1rem;
+}
+.header__seenon-text::before, .header__seenon-text::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: currentColor;
+}
+.header__seenon-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+  align-items: center;
+  justify-content: center;
+}
+.header__seenon-logos img {
+  height: 2rem;
+  justify-self: center;
+  filter: brightness(70%);
+}
+.header button {
+  align-self: start;
+  justify-self: start;
 }
 
 .realtors {
