@@ -133,13 +133,13 @@ body {
 .header__logo {
   height: 3rem;
   justify-self: center;
-  grid-row: span 4;
+  grid-row: span 3;
 }
 .header h1 {
   grid-row: span 2;
 }
 .header__seenon-text {
-  grid-row: span 5;
+  grid-row: span 4;
   line-height: 1;
   justify-self: center;
   color: #aaa;
@@ -178,6 +178,34 @@ body {
 .realtors {
   background-color: #101d2c;
   grid-column: col-start 7/full-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5vh;
+}
+.realtors .realtor {
+  display: grid;
+  grid-template-columns: min-content max-content;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 2rem;
+  align-items: center;
+  color: white;
+}
+.realtors .realtor__img {
+  border-radius: 50%;
+  width: 7rem;
+  grid-row: span 2;
+}
+.realtors .realtor__name {
+  font-size: 1.6rem;
+}
+.realtors .realtor__description {
+  color: gray;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-top: -2rem;
+  font-size: 0.8rem;
 }
 
 .features {
