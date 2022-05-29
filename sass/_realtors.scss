@@ -10,8 +10,11 @@
 
   .realtor{
     display: grid;
-    grid-template-columns:min-content max-content;
-    grid-template-rows: 1fr 1fr;
+    width: 80%;
+    grid-template-columns:repeat(auto-fit,10rem);
+    //grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    grid-auto-flow: row;
     column-gap: 2rem;
     align-items: center;
     color:white;
@@ -19,7 +22,6 @@
     &__img{
       border-radius: 50%;
       width: 7rem;
-      grid-row: span 2;
     }
 
     &__name{
@@ -30,7 +32,6 @@
       color:gray;
       text-transform: uppercase;
       line-height: 1;
-      margin-top: -2rem;
       font-size: 0.8rem;
     }
   }
