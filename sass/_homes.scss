@@ -1,5 +1,9 @@
 .homes{
   grid-column:center-start / center-end;
+  @media only screen and (max-width: $bp-small){
+    grid-column:full-start / full-end;
+    padding: 2vw;
+  }
   margin: 15rem 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -19,6 +23,7 @@
 
   &__img{
   width:100%;
+    height: auto;
     grid-column:1/-1;
     grid-row: 1/2;
     z-index: 0;
